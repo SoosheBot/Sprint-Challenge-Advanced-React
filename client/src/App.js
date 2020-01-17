@@ -1,15 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+import './App.css';
+import axios from 'axios';
+import wcPlayer from './components/wcPlayer';
 
-      </header>
-    </div>
-  );
-}
+class App extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      wcPlayerInfo: []
+    };
+    console.log('constructor is running')  
+  };
+
+  componentDidMount() {
+    axios
+    .get('http://localhost:5000/api/players')
+    .then(res => {
+      this.setState({
+        wcPlayerInfo: res.data
+      })
+    })
+    .catch(error => console.log('No player data returned.', error));
+  }
+
+  render() {
+    return(
+      <div className='App'>
+
+      </div>
+    )
+  }
+
+
+};
 
 export default App;

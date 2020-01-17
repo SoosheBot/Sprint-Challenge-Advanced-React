@@ -6,3 +6,7 @@ import App from './App';
 test('renders without crashing', () => {
   render(<App />);
 });
+
+// test('componentDidMount() running', () => {
+//   render()
+// });
