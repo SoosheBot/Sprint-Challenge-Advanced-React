@@ -2,10 +2,10 @@ import React from "react";
 import { render } from "@testing-library/react";
 import App from "./App";
 
-
-test("renders without crashing", () => {
-  render(<App />);
-});
+// sanity check test -- it should count, but it's kind of a big whatever of a test
+// test("renders without crashing", () => {
+//   render(<App />);
+// });
 
 test("header text is displaying", () => {
   const { findAllByText } = render(<App />);
