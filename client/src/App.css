@@ -1,90 +1,66 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-  line-height: 1;
-  width:100%;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Helvetica';
-    letter-spacing: 1%;
-    line-height: 100%;
-    margin-bottom: 3%;
-}
-
-
-
  .App{
-    display: flex;
-    justify-content: space-around;
-    background-color: DodgerBlue;
     text-align:center;
 }
 
-.App .wc-players-list {
+.App .header {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;  
+}
+
+/* .App .wc-players-list {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
     background-color:lightblue;
 
-}
+} */
 
 
-.usercard{
+/* .usercard{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
     padding:25px;
     background-color:lightgray;
     flex-wrap:nowrap;
-    /* margin-left:30%;
-    margin-right:30%; */
-}
-/* 
-.usercard .player-name {
-  margin:10px;
+    margin-left:30%;
+    margin-right:30%;
+} */
+
+.dark-mode__toggle {
+  background: lightsteelblue;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
 }
 
-.usercard .player-id {
-  margin:10px;
+.toggle {
+  background: darkblue;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+
 }
 
-.usercard .country {
-  margin:10px;
+.toggled {
+  left: 18px;
 }
 
-.usercard .searches {
-  margin:10px;
+.dark-mode {
+  color: #fff;
+  background-color: darkmagenta;
 }
-
- */
+  
+.darkmode {
+  border: none;
+  display:flex;
+  justify-content:center;
+}
