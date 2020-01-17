@@ -19,7 +19,7 @@ class App extends Component {
     .get('http://localhost:5000/api/players')
     .then(res => {
       this.setState({
-        wcPlayerInfo: res.data
+        WCPlayerInfo: res.data
       })
     })
     .catch(error => console.log('No player data returned.', error));
@@ -28,7 +28,8 @@ class App extends Component {
   render() {
     return(
       <div className='App'>
-
+        <h1>Women's World Cup Players</h1>
+        <WCPlayer WCPlayerInfo={this.state.WCPlayerInfo}/>
       </div>
     )
   }
