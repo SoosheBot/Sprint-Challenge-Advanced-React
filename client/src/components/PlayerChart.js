@@ -7,7 +7,12 @@ import {
 
 
 export default class PlayerChart extends Component {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/xqjtetw0/';
+  constructor(props) {
+      super(props);
+      this.state = {
+          searches:''
+      }
+  }
 
   render() {
     return (

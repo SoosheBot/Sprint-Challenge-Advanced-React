@@ -9,6 +9,12 @@ test('renders without crashing', () => {
   render(<App />);
 });
 
-// test('WCPlayerCard returns on props.WCPlayerInfo.map', () => {
-//   render(<WCPlayer />)
-// });
+test('header text is displaying', () => {
+  const { findAllByText } = render(<App />);
+    findAllByText(/header/i);
+});
+
+test('WCPlayers data is displaying', () => {
+  const { getByTestId } = render(<App />);
+    getByTestId(/wc-player-container/i);
+});

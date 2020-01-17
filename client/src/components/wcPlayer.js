@@ -3,7 +3,7 @@ import WCPlayerCard from './WCPlayerCard';
 
 const WCPlayer = (props) => {
     return (
-        <div className='player-info'>
+        <div className='wc-player-info'>
             {props.WCPlayerInfo.map(players => {
                 return (
                     <WCPlayerCard key={players.id}
