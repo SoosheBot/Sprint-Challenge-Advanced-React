@@ -1,5 +1,6 @@
  .App{
     text-align:center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .App .header {
@@ -9,26 +10,21 @@
   justify-content: center;  
 }
 
-/* .App .wc-players-list {
+.App .wc-players-list {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
-    background-color:lightblue;
-
-} */
+}
 
 
-/* .usercard{
+.usercard{
     display: flex;
     flex-direction:column;
     justify-content: space-around;
-    padding:25px;
-    background-color:lightgray;
+    padding:10px;
     flex-wrap:nowrap;
-    margin-left:30%;
-    margin-right:30%;
-} */
+}
 
 .dark-mode__toggle {
   background: lightsteelblue;
@@ -37,6 +33,7 @@
   height: 20px;
   position: relative;
   width: 40px;
+  margin-left:30px;
 }
 
 .toggle {
@@ -59,8 +56,8 @@
   background-color: darkmagenta;
 }
   
-.darkmode {
+/* .darkmode {
   border: none;
   display:flex;
-  justify-content:center;
-}
+  
+} */
