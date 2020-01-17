@@ -1,39 +1,24 @@
-import React from 'react';
-import { render, findByDisplayValue } from "@testing-library/react";
-import App from './App';
-import WCPlayer from './components/WCPlayer';
-import WCPlayerCard from './components/WCPlayerCard';
-import { text } from 'body-parser';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
 
-test('renders without crashing', () => {
+test("renders without crashing", () => {
   render(<App />);
 });
 
-test('header text is displaying', () => {
+test("header text is displaying", () => {
   const { findAllByText } = render(<App />);
-    findAllByText(/header/i);
+  findAllByText(/header/i);
 });
 
-test('WCPlayers data is displaying', () => {
+test("WCPlayers data is displaying", () => {
   const { getByTestId } = render(<App />);
-    getByTestId(/wc-player-container/i);
+  getByTestId(/wc-player-container/i);
 });
 
-// test("App renders with light mode default", () => {
-//   const { getByTestId } = render(<App />);
-//   expect(getByTestId("dark-mode__toggle")).toBeInTheDocument();
-//   // expect(getByTestId("header")).toHaveStyle("background-color: white");
-//   expect(getByTestId).toHaveStyle("background-color:white"); 
-
-
-// });
-
-test("toggles the theme", () => {
-  const { getByTestId } = render(<App />);
-  const toggleBtn = getByTestId("toggle-theme-btn");
-  fireEvent.click(toggleBtn);
-  expect(getByTestId("header")).toHaveStyle("background-color: black");
-  fireEvent.click(toggleBtn);
-  expect(getByTestId("header")).toHaveStyle("background-color: white");
+test("Darkmode toggle is rendering, App background color is white", () => {
+  const {findByDisplayValue} = render(<App />)
+  findByDisplayValue(/dark-mode__toggle/i);
+  findByDisplayValue("background-color:white");
 });

@@ -4,7 +4,7 @@ import "./App.css";
 import "./App.css";
 import axios from "axios";
 import WCPlayer from "./components/WCPlayer";
-import Darkmode from './components/Darkmode';
+import Darkmode from "./components/Darkmode";
 
 class App extends Component {
   constructor(props) {
@@ -29,10 +29,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='header'>
-        <h1>Women's World Cup Players</h1>
-        <div className="darkmode">
-          <Darkmode />
+        <div data-testid="dark-mode__toggle">
+          <div className="header">
+            <h1>Women's World Cup Players</h1>
+            <div className="darkmode">
+              <Darkmode />
+            </div>
           </div>
         </div>
         <div data-testid="wc-player-container">

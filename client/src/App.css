@@ -1,29 +1,28 @@
- .App{
-    text-align:center;
-    font-family: 'Courier New', Courier, monospace;
+.App {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .App .header {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .App .wc-players-list {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-
-.usercard{
-    display: flex;
-    flex-direction:column;
-    justify-content: space-around;
-    padding:10px;
-    flex-wrap:nowrap;
+.usercard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  flex-wrap: nowrap;
 }
 
 .dark-mode__toggle {
@@ -33,7 +32,7 @@
   height: 20px;
   position: relative;
   width: 40px;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
 .toggle {
@@ -44,7 +43,6 @@
   position: absolute;
   transition: 0.2s;
   width: 20px;
-
 }
 
 .toggled {
@@ -55,9 +53,8 @@
   color: #fff;
   background-color: darkmagenta;
 }
-  
-/* .darkmode {
+
+.darkmode {
   border: none;
-  display:flex;
-  
-} */
+  display: flex;
+}
