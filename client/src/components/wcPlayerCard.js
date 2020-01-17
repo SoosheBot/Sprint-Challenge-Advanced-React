@@ -1,6 +1,6 @@
 import React from "react";
 
-const wcPlayerCard = ({ name, id, country, searches }) => {
+const WCPlayerCard = ({ name, id, country, searches }) => {
   return (
     <div className="usercard">
       <h2 className="player-name">Name: {name}</h2>
@@ -11,4 +11,4 @@ const wcPlayerCard = ({ name, id, country, searches }) => {
   );
 };
 
-export default wcPlayerCard;
+export default WCPlayerCard;

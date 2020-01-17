@@ -1,10 +1,10 @@
 import React from 'react';
-import wcPlayerCard from './wcPlayerCard';
+import wcPlayerCard from './WCPlayerCard';
 
 const wcPlayer = (props) => {
     return (
         <div className='player-info'>
-            {props.wcPlayerInfo.map(players => {
+            {props.WCPlayerInfo.map(players => {
                 return (
                     <wcPlayerCard key={players.id}
                         name={players.name}
@@ -19,4 +19,4 @@ const wcPlayer = (props) => {
 }
 
 
-export default wcPlayer;
+export default WCPlayer;

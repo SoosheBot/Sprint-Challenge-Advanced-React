@@ -3,13 +3,13 @@ import './App.css';
 
 import './App.css';
 import axios from 'axios';
-import wcPlayer from './components/wcPlayer';
+import WCPlayer from './components/WCPlayer';
 
 class App extends Component {
   constructor(props) {
     super();
     this.state = {
-      wcPlayerInfo: []
+      WCPlayerInfo: []
     };
     console.log('constructor is running')  
   };
